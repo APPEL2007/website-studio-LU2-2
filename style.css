@@ -1,0 +1,191 @@
+/* ======================
+   CSS RESET            
+   ====================== */
+*{margin:0
+;padding:0;
+border:0;
+text-decoration:none;
+color:#000;
+font-size:16px;
+font-weight:100;
+box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;
+background-color:#3d5a2c;
+color:#222;
+line-height:1.6}
+
+/* Main en Marges */
+main{margin:10px}
+#actief{color:#669c58}
+main h1,main h2,main p,main img{margin:0 0 10px}
+
+/* typografie voor headings en paragrafen */
+h1,h2,h3{color:#95c36d;margin:0 0 12px}
+p{margin:0 0 16px;color:#95c36d}
+
+
+/* Eerste afbeelding in main */
+main img:first-of-type{display:block;
+  max-width:100%;
+  height:auto;
+  border-radius:6px;
+  margin:0}
+
+/* Footer */
+footer
+{
+  text-align:center;
+  padding:18px 20px;
+  background-color: #3d5a2c;
+  color:#fff;
+  font-size:14px
+}
+
+
+/* =========================
+   HEADER & NAVIGATIE
+   ========================= */
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between; /* logo links, nav rechts */
+  align-items:center;           
+  background-color:#f0ede0;      /* basis headerkleur */
+  padding:10px 20px;
+}
+
+/* Link-stijl in de header */
+header a{
+  color:#fff;  /* wit */
+  display:block;
+  float:left;
+  margin:10px 0 0 10px;
+  font-size: 10px;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* Navigatie in de header*/
+nav,nav a{
+  font-size:20px;
+}
+nav{
+  display:inline-block;
+}
+nav a{
+  color:#3d5a2c;
+  text-decoration:none;
+  font: 100px;
+  border-bottom:2px solid transparent;
+  transition: .2s ease;
+}
+
+nav a:hover{
+  color:#fcfcfc;
+  border-bottom-color:#669c58;
+}
+nav a#actief{
+  border-bottom-color:#669c58;
+}
+
+/* Header responsive kleuren */
+@media (min-width:768px){
+  header{
+    background-color: #669c58;
+  }
+}
+
+@media (min-width:1024px){
+  header{
+    background-color:#669c58;
+  }
+}
+
+
+
+/* Naam in header (Amber Rijsbergen) */
+header p{
+  font-size:1.5rem;
+  font-weight:bold;
+  color:#3d5a2c;
+  margin:0;
+  padding-left:20px;
+  margin-top:-4px;
+  margin-left:-900px; 
+}
+
+
+/* — Index pagina — */
+.green-banner
+{
+  width:100%;
+  background-color:#3d5a2c;
+  text-align:center;
+  padding:15rem 15rem
+}
+.banner-content h2
+{
+  font-size:12rem;
+  font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+  color:#e6e0c7;
+  margin-top:-200px;
+  margin-left:-400px
+}
+.banner-content p{
+  font-size:5rem;
+  font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
+  max-width:60ch;
+  color:#669c58;
+  margin-top:-100px;
+  margin-left:-440px
+}
+
+
+/* =========================
+   STOP MOTIONS
+   ========================= */
+
+/* Container van de grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 14px;   /* horizontale afstand */
+  row-gap: 20px;       /* verticale afstand (kleiner) */
+  margin-top: 60px;   
+}
+
+/* Staande tegels */
+.video {
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Video vult de tegel */
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+.week_titel {
+    color: #3d5a2c;           
+    font-size: 24px;         
+    font-weight: bold;        
+    margin: 30px 0 0 0;               
+    padding: 10px;            
+    background-color: #f0ebd7;
+    border-radius: 6px;     
+}
+
+
+.feedback-img {
+  width: 800px;         
+  height: auto;
+    margin-top: 30px; /* afstand tussen video en afbeelding */
+}
